@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this dataset, cite the Zenodo record or this landing page."
+title: "Free certificate course claims, 2026"
+abstract: "Fifteen courses advertised as free with a certificate, audited against what the checkout page actually said: five give a free certificate, eight charge somewhere, two issue none, twelve are free to study end to end."
+type: dataset
+authors:
+  - name: "Rapid Vibe"
+    website: "https://rapidvibe.pages.dev/"
+date-released: 2026-10-15
+license: CC-BY-4.0
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23531829
+url: "https://rapidvibe.pages.dev/posts/free-certificate-courses-dataset"
+repository: "https://github.com/RapidVibe/free-certificate-dataset"
