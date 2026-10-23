@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free certificate course claims, 2026 — dataset and citation</title>
+<meta name="description" content="Fifteen courses advertised as free-with-certificate, audited in 2026: five give a free certificate, eight charge somewhere, two issue none. Data as CSV and JSON, CC BY 4.0, with a DOI.">
+<link rel="canonical" href="https://rapidvibe.pages.dev/posts/free-certificate-courses-dataset">
+<style>
+  :root { color-scheme: light dark; }
+  body { font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+         max-width: 46rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+  h1 { font-size: 1.9rem; line-height: 1.25; margin-bottom: .4rem; }
+  h2 { font-size: 1.15rem; margin-top: 2rem; }
+  .sub { opacity: .72; margin-top: 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
+  th, td { text-align: left; padding: .45rem .6rem; border-bottom: 1px solid rgba(128,128,128,.35); }
+  td.num { font-variant-numeric: tabular-nums; }
+  code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .92em; }
+  pre { padding: .9rem 1rem; overflow-x: auto; background: rgba(128,128,128,.12); border-radius: 8px; }
+  a { color: inherit; text-underline-offset: 2px; }
+  footer { margin-top: 3rem; font-size: .9rem; opacity: .72; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Free certificate course claims, 2026</h1>
+  <p class="sub">Fifteen courses advertised as free with a certificate, checked against what the checkout page actually said.</p>
+
+  <p>Every course in this set markets itself as free and every one of them gives you access to the
+  material without paying. That is not the same as a free certificate. The audit records the price
+  field, the clause that names the charge, and the date each claim was last checked, so a reader can
+  see whether "free" means free to study or free to certify.</p>
+
+  <table>
+    <thead><tr><th>Claim</th><th>Courses</th></tr></thead>
+    <tbody>
+      <tr><td>Certificate genuinely free</td><td class="num">5</td></tr>
+      <tr><td>Charges somewhere (certificate fee, paid exam, or subscription)</td><td class="num">8</td></tr>
+      <tr><td>Issues no certificate at all, free or paid</td><td class="num">2</td></tr>
+      <tr><td>Free to study end to end</td><td class="num">12</td></tr>
+    </tbody>
+  </table>
+
+  <h2>The data</h2>
+  <p>The table is published in two formats, both generated from the same rows:</p>
+  <ul>
+    <li><a href="https://rapidvibe.pages.dev/data/free-certificate-courses.csv">free-certificate-courses.csv</a> — one row per course, flat columns.</li>
+    <li><a href="https://rapidvibe.pages.dev/data/free-certificate-courses.json">free-certificate-courses.json</a> — the same rows with the evidence fields kept separate.</li>
+  </ul>
+  <p>Both are released under CC BY 4.0. The readable version, with the table rendered and the
+  method described, is the <a href="https://rapidvibe.pages.dev/posts/free-certificate-courses-dataset">dataset page</a>.
+  The three questions that settle a claim in five minutes are on the
+  <a href="https://rapidvibe.pages.dev/posts/free-online-courses-with-certificates">online courses guide</a>,
+  and the same questions applied to AI tools are on the
+  <a href="https://rapidvibe.pages.dev/free-ai-tools-hub">free AI tools hub</a>.</p>
+
+  <h2>How to cite it</h2>
+  <p>Rapid Vibe (2026). <em>Which "free" certificate courses give a free certificate?</em> (sourced
+  table), checked 15 October 2026. Zenodo.
+  <a href="https://doi.org/10.5281/zenodo.23531829">https://doi.org/10.5281/zenodo.23531829</a></p>
+
+  <pre><code>@dataset{rapidvibe_free_certificate_2026,
+  author    = {{Rapid Vibe}},
+  title     = {Which "free" certificate courses give a free certificate?},
+  year      = {2026},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.23531829},
+  url       = {https://doi.org/10.5281/zenodo.23531829}
+}</code></pre>
+
+  <h2>What counts as evidence</h2>
+  <p>A row only keeps "free certificate" if the certificate can be issued without a payment step:
+  no certificate fee, no paid exam, and no subscription that has to be live at the moment the
+  certificate is released. A course that is free to study but gates the certificate is recorded as
+  charging, with the clause quoted, because that is the part a learner discovers last.</p>
+</main>
+<footer>
+  <p>Data: CC BY 4.0. Page: <a href="https://rapidvibe.pages.dev/">rapidvibe.pages.dev</a>.</p>
+</footer>
+</body>
+</html>
